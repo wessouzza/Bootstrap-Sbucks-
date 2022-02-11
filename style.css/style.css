@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+:root {
+    --green-sb:    #224634;
+    --dark-gren:   #018559;
+    --light-green: #d4e9e2;
+    --light-grey:  #888;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #32312d;
+    scroll-behavior: smooth;
+}
+
+
+
+/*  HEADER  */
+#logo {
+    width: 3rem;
+}
+
+.navbar {
+    box-shadow: 0 .5px 7px rgba(0, 0, 0, .7);
+    height: 6rem;
+}
+
+.navbar a {
+    font-family: "be vietnam pro";
+    font-size: .8rem;
+    font-weight: 900;
+    color: #222;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid var(--dark-gren);
+    width: 0;
+    top: 3.8rem;
+}
+
+/*.navbar a:active:after {
+    content: "";
+    position: absolute;
+    border-bottom: 6px solid var(--dark-gren);
+    width: 100%;
+    top: 3.7rem;
+}*/
+
+.navbar a:hover {
+    color: var(--dark-gren);
+}
+
+#hist {
+    width: 8rem;
+}
+
+#icon-loc {
+    font-size: 1.4rem;
+    color: #444;
+}
+
+#white-pill {
+    outline: 1px solid #444;
+    height: 2rem;
+    transition: .3s;
+}
+
+#white-pill:hover {
+    background: rgba(0, 0, 0, .06);
+    transform: scale(.93);
+}
+
+#black-pill {
+    height: 2.2rem;
+    transition: .3s;
+}
+
+#black-pill:hover {
+    transform: scale(.93);
+}
+
+
+/* HERO SECTION (HOME)*/
+#hero-container {
+    max-width: 1430px;
+    background-color: var(--light-green);
+    align-items: center;
+}
+
+#hero-container span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.75;
+}
+
+#hero-pill {
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: .3s;
+    height: 2rem;
+}
+
+#hero-pill:hover {
+    background: rgb(0, 0, 0, .06);
+    transform: scale(.92);
+    box-shadow: 0 .2px 5px rgba(0, 0, 0, .4);
+}
+
+
+/* FOOTER */
+footer {
+    box-shadow:  0 2px 4px 0 rgb(0 0 0 / 70%), 
+                 0 2px 8px 0 rgb(0 0 0 / 50%), 
+                 0 1px 5px 0 rgb(0 0 0 / 10%);
+}
+
+footer h4 {
+    font-size: 1.3rem;
+}
+
+
+
+footer li {
+    margin-top: 1rem;
+    list-style: none;
+    width: 12rem;
+    margin-left: -1rem;
+}
+
+footer a {
+    font-weight: 500;
+    color: var(--light-grey);
+    transition: .2s;
+}
+ footer a:hover {
+     color: #32312d;
+ }
+
+#social-media i {
+    font-size: 2rem;
+    margin-left: 8px;
+    color: black;
+}
+
+#policy a {
+    font-size: .9rem;
+}
+
+#policy li {
+    margin: 15px;
+}
+
+
+
+/* CARDÁPIO SECTION */
+#sec-cardápio {
+    max-width: 1430px;
+    background-color: #eee;
+}
+
+#sec-cardápio h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+#sec-cardápio a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark-gren);
+}
+
+#sec-cardápio p {
+    font-size: .6rem;
+}
+
+
+/*  REWARDS SECTION  */
+#reward-nav {
+    background-color: var(--green-sb);
+}
+
+#reward-nav h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+#nav2-pill {
+    font-weight: 500;
+    letter-spacing: 1px;
+    height: 2.2rem;
+    transition: .3s;
+}
+
+
+/*  NOSSO CAFÉ SECTION  */
+#nosso-café a {
+    background-color: var(--dark-gren);
+    color: #fff;
+    transition: .3s;
+}
+
+#nosso-café a:hover {
+    background-color: #fff;
+    color: var(--dark-gren);
+}
+
+
+
+
+
+
+/*---\\\  MEDIA QUERIES  ///---*/
+@media (min-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width:395px) {
+    #reward-nav h3 {
+        font-size: 13px;
+    }
+}
